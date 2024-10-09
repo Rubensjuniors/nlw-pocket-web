@@ -88,7 +88,7 @@ export const CreateGoal = () => {
                 control={control}
                 name="desiredWeeklyFrequency"
                 defaultValue={3}
-                render={({ field: { onChange, value, ref } }) => {
+                render={({ field: { onChange, value } }) => {
                   return (
                     <RadioGroup onValueChange={onChange} value={String(value)}>
                       {radioGroupItems.map((item) => (
